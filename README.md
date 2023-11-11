@@ -16,8 +16,8 @@ Tool.Equipped:Connect(function()
 	if humanoid then
 		idleAnim1 = humanoid:LoadAnimation(idle)
 		idleAnim1:Play()
-		
-		
+
+
 		Event_ = humanoid:GetPropertyChangedSignal('MoveDirection'):Connect(function()
 			
 			local magnitude = humanoid.MoveDirection.Magnitude
